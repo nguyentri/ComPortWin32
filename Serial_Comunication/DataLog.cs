@@ -92,8 +92,14 @@ namespace Serial_Comunication
         }
         private void buttonReload_Click(object sender, EventArgs e)//reload button event ,most useful if you use virtual COM port e.g FTDI,Prolific 
         {
+            PanelData.Visible = true;
  //           getportnames();                 //init parameters of serial comunication before every touch button "send" 
             InitComPort();
+        }
+
+        private void buttonBackToSettings_Click(object sender, EventArgs e)
+        {
+            PanelData.Visible = false;
         }    
     }
 }
